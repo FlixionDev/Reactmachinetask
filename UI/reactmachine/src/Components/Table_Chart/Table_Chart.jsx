@@ -33,7 +33,7 @@ export default function Table_Chart() {
         fetchData()
     }, [])
     const fetchData = () => {
-        fetch(`http://localhost:3001/api/table`).then(res => res.json()).then((res) => { 
+        fetch(`https://reactmachine.onrender.com/api/table`).then(res => res.json()).then((res) => { 
             setState(res)
             console.log(res)
          }).catch(err => console.log(err));
