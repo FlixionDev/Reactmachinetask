@@ -7,7 +7,7 @@ export default function Pie_Chart() {
         fetchData()
     }, [])
     const fetchData = () => {
-        fetch(`http://localhost:3001/api/pie-chart`).then(res => res.json()).then((res) => {
+        fetch(`https://reactmachine.onrender.com/api/pie-chart`).then(res => res.json()).then((res) => {
             setState(res)
             console.log(res)
         }).catch(err => console.log(err));
