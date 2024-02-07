@@ -33,9 +33,9 @@ export default function Dashboard() {
                 <Grid item lg={9.7} md={12} xs={11} sm={12} sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
                     <Table_Chart />
                 </Grid>
-                <Grid item lg={2.1} md={12} xs={11} sm={12} sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
+                <Grid item lg={2.1}  sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
                     <Grid container sx={{ gridTemplateRows: "70% 20% 10%" }}>
-                        <Grid item ><img style={{ width: "100%", height: "210px" }} src='https://www.picturecorrect.com/wp-content/uploads/2021/02/black-and-white-portrait.jpg' /></Grid>
+                        <Grid item sx={{width:"100%"}}><img style={{ width: "100%", height: "210px" }} src='https://www.picturecorrect.com/wp-content/uploads/2021/02/black-and-white-portrait.jpg' /></Grid>
                         <Grid item xs={12}>
                             <Typography>
                                 John Doe
