@@ -1,0 +1,8 @@
+@media (max-width: 500px) {
+    .nav{
+        flex-direction: column !important;
+    }
+    /* .nav p{
+        padding: 10px;
+    } */
+}

@@ -8,15 +8,16 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import PersistentDrawerLeft from '../Sidebar/Sidebar'
+import style from './Dashboard.module.css'
 export default function Dashboard() {
     return (
         <>
        
-            <Grid container m={2} sx={{display:'flex',justifyContent:"",alignItems:'center'}}>
+            <Grid container m={2} className={style.nav} sx={{display:'flex',justifyContent:"",alignItems:'center'}}>
             <PersistentDrawerLeft/>
-            <Grid sx={{display:'flex',position:'fixed',left:"80px",justifyContent:"space-between",alignItems:'center',width:"90%"}}>
+            <Grid container className={style.nav}  sx={{display:'flex',justifyContent:"space-between",alignItems:'center',flex:'1'}}>
 
-                <Grid item  sx={{display:'flex',alignItems:'center',gap:"10px"}}><Grid><Typography fontSize={24}>Good Morning ! </Typography></Grid><Grid><WbSunnyIcon sx={{ color: "orange" }} /></Grid></Grid>
+                <Grid item   sx={{display:'flex',alignItems:'center',gap:"10px"}}><Grid><Typography fontSize={24} p={1}>Good Morning ! </Typography></Grid><Grid><WbSunnyIcon sx={{ color: "orange" }} /></Grid></Grid>
                 <Grid item sx={{display:'flex',bgcolor:'white',gap:"10px",borderRadius:'10px'}} p={1} px={2}>
                     <Grid>
                         <Typography>John Doe</Typography>
@@ -39,7 +40,7 @@ export default function Dashboard() {
                 <Grid item lg={9.7} md={12} xs={11} sm={12} sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
                     <Table_Chart />
                 </Grid>
-                <Grid item lg={2.1}  sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
+                <Grid item lg={2.1} md={4} xs={5} sm={5} m={'auto'} sx={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;", bgcolor: 'white' }}>
                     <Grid container sx={{ gridTemplateRows: "70% 20% 10%" }}>
                         <Grid item sx={{width:"100%"}}><img style={{ width: "100%", height: "210px" }} src='https://www.picturecorrect.com/wp-content/uploads/2021/02/black-and-white-portrait.jpg' /></Grid>
                         <Grid item xs={12}>
