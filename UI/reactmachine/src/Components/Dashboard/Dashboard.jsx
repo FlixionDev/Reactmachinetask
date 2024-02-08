@@ -1,4 +1,4 @@
-import { Card, Grid, Pagination, Typography } from '@mui/material'
+import { Card, Grid, Pagination, SwipeableDrawer, Typography } from '@mui/material'
 import React from 'react'
 import Graph from '../Graph/Graph'
 import Pie_Chart from '../Pie_Chart/Pie_Chart'
@@ -7,10 +7,15 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import PersistentDrawerLeft from '../Sidebar/Sidebar'
 export default function Dashboard() {
     return (
         <>
-            <Grid container m={2} sx={{display:'flex',justifyContent:"space-between",alignItems:'center'}}>
+       
+            <Grid container m={2} sx={{display:'flex',justifyContent:"",alignItems:'center'}}>
+            <PersistentDrawerLeft/>
+            <Grid sx={{display:'flex',position:'fixed',left:"80px",justifyContent:"space-between",alignItems:'center',width:"90%"}}>
+
                 <Grid item  sx={{display:'flex',alignItems:'center',gap:"10px"}}><Grid><Typography fontSize={24}>Good Morning ! </Typography></Grid><Grid><WbSunnyIcon sx={{ color: "orange" }} /></Grid></Grid>
                 <Grid item sx={{display:'flex',bgcolor:'white',gap:"10px",borderRadius:'10px'}} p={1} px={2}>
                     <Grid>
@@ -21,6 +26,7 @@ export default function Dashboard() {
                         <img style={{width:"50px",height:"50px",borderRadius:'12px'}} src='https://www.picturecorrect.com/wp-content/uploads/2021/02/black-and-white-portrait.jpg'/>
                     </Grid>
                 </Grid>
+            </Grid>
 
             </Grid>
             <Grid container mx={2} mt={2} rowGap={4} columnGap={2}>
