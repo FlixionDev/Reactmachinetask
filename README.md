@@ -13,11 +13,11 @@ Statboard
 
 # Laptop View Screenshot:-
 
-(https://cdn.hashnode.com/res/hashnode/image/upload/v1707478959172/dfff8cff-f32d-4699-a238-0b67ef5b1057.png align="center")
+https://cdn.hashnode.com/res/hashnode/image/upload/v1707478959172/dfff8cff-f32d-4699-a238-0b67ef5b1057.png
 
 # Tablet View Screenshot:-
 
-(https://cdn.hashnode.com/res/hashnode/image/upload/v1707479036006/0ec5a8e8-f381-4042-84df-4e1ae60a5c85.png align="center")
+https://cdn.hashnode.com/res/hashnode/image/upload/v1707479036006/0ec5a8e8-f381-4042-84df-4e1ae60a5c85.png align="center"
 
 # Mobile View Screenshot:-
 
